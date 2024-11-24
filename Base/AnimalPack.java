@@ -1,14 +1,14 @@
 package Base;
 
-import java.util.Date;
-import java.util.List;
+import java.time.LocalDate;
+
 
 public abstract class AnimalPack extends Animal {
 
 
-    public AnimalPack(int id, String name, Date birthDay, AnimalSex sex, String comments, List<String> commands)
+    public AnimalPack(int id, String name, LocalDate birthDay, String sex, String comments)
     {
-        super(id, name, birthDay, sex, comments, commands);
+        super(id, name, birthDay, sex, comments);
     }
 
 

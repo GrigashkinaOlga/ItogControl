@@ -4,16 +4,17 @@ import Base.AnimalPack;
 
 import java.time.LocalDate;
 
-public class Camel extends AnimalPack {
 
-    public Camel(int id, String name, LocalDate birthDay, String sex, String comments)
+public class Monkey extends AnimalPack {
+
+    public Monkey(int id, String name, LocalDate birthDay, String sex, String comments)
     {
         super(id, name, birthDay, sex, comments);
     }
-    
+
+
     @Override
     public String getType() {
-        return "Camel";
+        return "Monkey";
     }
-
 }

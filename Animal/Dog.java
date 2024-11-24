@@ -1,16 +1,15 @@
 package Animal;
 
 import Base.AnimalPets;
-import Base.AnimalSex;
 
-import java.util.Date;
-import java.util.List;
+import java.time.LocalDate;
+
 
 public class Dog extends AnimalPets {
 
-    public Dog(int id, String name, Date birthDay, AnimalSex sex, String comments, List<String> commands)
+    public Dog(int id, String name, LocalDate birthDay, String sex, String comments)
     {
-        super(id, name, birthDay, sex, comments, commands);
+        super(id, name, birthDay, sex, comments);
     }
 
     @Override

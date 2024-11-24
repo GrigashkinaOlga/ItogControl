@@ -1,16 +1,15 @@
 package Animal;
 
 import Base.AnimalPack;
-import Base.AnimalSex;
 
-import java.util.Date;
-import java.util.List;
+import java.time.LocalDate;
+
 
 public class Horse extends AnimalPack {
 
-    public Horse(int id, String nickName, Date birthDay, AnimalSex sex, String comments, List<String> commands)
+    public Horse(int id, String nickName, LocalDate birthDay, String sex, String comments)
     {
-        super(id, nickName, birthDay, sex, comments, commands);
+        super(id, nickName, birthDay, sex, comments);
     }
 
     @Override

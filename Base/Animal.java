@@ -2,20 +2,20 @@
 package Base;
 
 
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 public abstract class Animal {
     private int id;
     private String name;
-    private Date birthDay;
-    private AnimalSex sex;
+    private LocalDate birthDay;
+    private String sex;
     private String comments;
     private List<String> commands;
 
 
-    public Animal(int id, String name, Date birthDay, AnimalSex sex, String comments, List<String> commands)
+    public Animal(int id, String name, LocalDate birthDay, String sex, String comments)
     {
         this.id = id;
         this.name = name;
